@@ -1,0 +1,104 @@
+html {
+  height: 100%;
+  background: #000000;
+  font-family: 'Space Mono', monospace;
+  color: #fff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+.control {
+  margin: 50px auto;
+  width: 300px;
+}
+
+.control-title {
+  display: block;
+  margin: 0 0 5px;
+  font-size: 0.6em;
+  letter-spacing: 0.25em;
+}
+
+.control-session,
+.control-break {
+  padding: 5px 10px;
+  width: 140px;
+  color: #fff;
+  font-size: 1.5em;
+  text-align: center;
+}
+
+.control-session {
+  float: left;
+}
+
+.control-break {
+  float: right;
+}
+
+.pomodoro {
+  position: relative;
+  text-align: center;
+}
+
+.title {
+  display: inline-block;
+  position: absolute;
+  top: 20px;
+  left: 0;
+  padding: 10px;
+  color: #fff;
+  font-size: 0.6em;
+  letter-spacing: 0.25em;
+}
+
+.status {
+  position: absolute;
+  top: 80px;
+  width: 100%;
+  color: #fff;
+  color: rgba(0, 0, 0, 0.3);
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.25em;
+}
+
+.timer {
+  font-size: 20vw;
+  font-weight: bold;
+}
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.button {
+  margin: 15px 5px;
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  background: #fff;
+  line-height: 36px;
+  cursor: pointer;
+}
+
+.button:hover {
+  color: #fff;
+}
+
+.button:focus {
+  outline: none;
+}
+
+.break {
+  background: #e3dede;
+  border: 10px solid #fff;
+  -webkit-box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.5);
+  box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.5);
+}
