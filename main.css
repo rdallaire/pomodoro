@@ -5,6 +5,10 @@ html {
   color: #fff;
 }
 
+body {
+  height: 100%;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -71,6 +75,12 @@ html {
   font-size: 30vw;
   font-weight: bold;
   line-height: 1em;
+}
+
+.button-controls {
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
 }
 
 .clearfix:after {
