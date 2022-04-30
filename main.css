@@ -12,8 +12,9 @@ html {
 
 .control {
   margin: 50px auto;
-  width: 300px;
+  width: 400px;
 }
+
 
 .control-title {
   display: block;
@@ -85,10 +86,12 @@ html {
   background: #fff;
   line-height: 36px;
   cursor: pointer;
+  opacity: 0.3;
+  transition: opacity 0.7s ease;
 }
 
 .button:hover {
-  color: #fff;
+opacity: 1;
 }
 
 .button:focus {
@@ -96,9 +99,5 @@ html {
 }
 
 .break {
-  background: #e3dede;
-  border: 10px solid #fff;
-  -webkit-box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.5);
-  -moz-box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.5);
-  box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.5);
+  color: #C7F070;;
 }
