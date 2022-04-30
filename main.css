@@ -70,7 +70,9 @@ html {
 .timer {
   font-size: 30vw;
   font-weight: bold;
+  line-height: 1em;
 }
+
 .clearfix:after {
   content: "";
   display: table;
