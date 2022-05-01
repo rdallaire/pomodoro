@@ -22,11 +22,32 @@ html {
   text-align: center;
 }
 
+.control {
+  transition: all 0.8s ease;
+}
+
+.fa-plus-circle {
+  margin-left: 10px;
+}
+
+.fa-minus-circle {
+  margin-right: 10px;
+}
+
+.control.timer-going {
+  opacity: 0;
+  transform: translateY(-30px);
+}
+.control.timer-stopped {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 .control-title {
   display: block;
   margin: 0 0 5px;
-  font-size: 0.6em;
-  letter-spacing: 0.25em;
+  font-size: 12px;
+  text-transform: uppercase;
 }
 
 .control-session,
@@ -74,7 +95,7 @@ html {
 }
 
 .timer {
-  font-size: 30vw;
+  font-size: 25vw;
   font-weight: bold;
   line-height: 100vh;
   height: 100%;

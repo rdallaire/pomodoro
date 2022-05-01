@@ -60,13 +60,17 @@ function startTimer(display) {
 }
 
 function toggleTimer() {
-  console.log('toggle');
   if (timeOn) {
     timeOn = false;
     displayToggle.innerHTML = '<i class="fa fa-play"></i>';
     clearInterval(timer);
+    controlsElem.classList.add("timer-stopped");
+    controlsElem.classList.remove("timer-going");
+
   } else {
     timeOn = true;
+    controlsElem.classList.add("timer-going");
+    controlsElem.classList.remove("timer-stopped");
     displayToggle.innerHTML = '<i class="fa fa-pause"></i>';
     startTimer();
   }
@@ -76,6 +80,7 @@ function toggleTimer() {
   pomodoroSkin = document.getElementsByClassName('pomodoro')[0];
   displayStatus = document.getElementsByClassName('status')[0];
   displayTime = document.getElementsByClassName('timer')[0];
+  controlsElem = document.getElementsByClassName('control')[0];
   displayToggle = document.getElementById('toggle');
 
   document.getElementById('switch').onclick = switchMode;
@@ -109,4 +114,13 @@ function toggleTimer() {
       displayBreak.innerHTML = timeBreak;
     }
   };
+
+  document.getElementById('four-five').onclick = function() {
+      timeSession = 45;
+      displaySession.innerHTML = timeSession;
+  };
+  document.getElementById('two-five').onclick = function() {
+    timeSession = 25;
+    displaySession.innerHTML = timeSession;
+};
 })();
