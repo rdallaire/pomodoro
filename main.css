@@ -3,18 +3,24 @@ html {
   background: #000000;
   font-family: 'Space Mono', monospace;
   color: #fff;
+  cursor: crosshair;
 }
 
 * {
   box-sizing: border-box;
 }
 
-
 .control {
   margin: 50px auto;
   width: 400px;
 }
 
+.todo {
+  position: fixed;
+  left: 25%;
+  bottom: 10%;
+  text-align: center;
+}
 
 .control-title {
   display: block;
@@ -70,7 +76,14 @@ html {
 .timer {
   font-size: 30vw;
   font-weight: bold;
-  line-height: 1em;
+  line-height: 100vh;
+  height: 100%;
+  z-index: -20;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+
 }
 
 .button-controls {
@@ -110,3 +123,19 @@ opacity: 1;
 .break {
   color: #C7F070;;
 }
+
+.todo {
+width: 50%;
+margin: 0 auto;
+}
+
+.todo h3 {
+  outline: none;
+  font-size: 40px;
+  font-weight: normal;;
+}
+
+.todo h3:hover {
+  border-bottom: 1px solid  rgb(108, 108, 108);
+}
+
