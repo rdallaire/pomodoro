@@ -1,4 +1,3 @@
-console.log('main.js');
 var pomodoroSkin,
   displayStatus,
   displayTime,
